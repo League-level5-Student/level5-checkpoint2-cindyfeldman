@@ -29,7 +29,14 @@ public class Checkpoint {
 		 * 
 		 * 5. Print only the cars with "toyota" in the name.
 		 */
+		ArrayList<CarMPGEntry> car = Checkpoint.readCarMPGEntryDataFromFile();
 		
+			System.out.print(car);
+			for (int i = 0; i < car.size(); i++) {
+				
+			
+			System.out.println(car.get(i) + " mpg: " +car.get(i).mpg);
+			}
 		
 	}
 	
